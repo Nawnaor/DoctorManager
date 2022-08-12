@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.alex-zaitsev</groupId>
+  <artifactId>meternumberpicker</artifactId>
+  <version>1.0.5</version>
+  <packaging>aar</packaging>
+  <name>MeterNumberPicker</name>
+  <description>The android library that provides a simple and customizable NumberPicker styled as meter.</description>
+  <url>https://github.com/alexzaitsev/meter-number-picker</url>
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>alexzaitsev</id>
+      <name>Alex Zaitsev</name>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git@github.com:alexzaitsev/meter-number-picker.git</connection>
+    <developerConnection>scm:git@github.com:alexzaitsev/meter-number-picker.git</developerConnection>
+    <url>https://github.com/alexzaitsev/meter-number-picker</url>
+  </scm>
+  <dependencies>
+    <dependency>
+      <groupId>com.android.support</groupId>
+      <artifactId>appcompat-v7</artifactId>
+      <version>27.0.2</version>
+      <scope>compile</scope>
+    </dependency>
+  </dependencies>
+</project>

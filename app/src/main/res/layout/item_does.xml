@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="5dp"
+    app:cardCornerRadius="10dp"
+    app:cardBackgroundColor="@color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical"
+            android:background="@drawable/btn_background">
+
+            <TextView
+                android:id="@+id/day2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="SAT"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:fontFamily="@font/umoe"
+                android:textColor="@color/colorLightPink"
+                android:alpha="0.9"/>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#00B8D4"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/title2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Dr.Mobile"
+                    android:fontFamily="@font/pyidaungsubold"
+                    android:singleLine="true"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:textColor="@color/colorLightPink"/>
+
+
+                <ImageView
+                    android:id="@+id/options2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ca"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/description2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Dr.mobile is the best"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textSize="14sp"
+                android:textColor="@color/colorAlert"/>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#00B8D4"
+                android:layout_marginTop="3dp"/>
+
+
+            <TextView
+                android:id="@+id/phoneNo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:padding="5dp"
+                tools:text="091234"
+                android:singleLine="true"
+                android:alpha="0.5"
+                android:textSize="14sp"
+                android:textColor="#00B8D4"/>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#00B8D4"
+                />
+
+            <TextView
+                android:id="@+id/time2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text=""
+                android:singleLine="true"
+                android:alpha="0.5"
+                android:textSize="12sp"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/colorPrimary"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="end"
+                android:paddingTop="8dp">
+
+
+                <TextView
+                    android:id="@+id/condition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ပြုပြင်နေဆဲ"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/umoe"
+                    android:textColor="#00B8D4"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

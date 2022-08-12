@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/dashboard"
+            android:icon="@drawable/ic_dashboard_black_24dp"
+            android:title="ဇယား" />
+        <item
+            android:id="@+id/my_account"
+            android:icon="@mipmap/myaccount"
+            android:title="ကျွန်ုပ်အကောင့်" />
+        <item
+            android:id="@+id/my_team"
+            android:icon="@mipmap/myteam"
+            android:title="ကျွန်ုပ်အဖွဲ့" />
+        <item
+            android:id="@+id/statistics"
+            android:icon="@mipmap/stats"
+            android:title="အခြေအနေ" />
+        <item
+            android:id="@+id/chat_room"
+            android:icon="@drawable/ic_message"
+            android:title="စကားပြောခန်း" />
+    </group>
+
+    <item android:title="ဆက်သွယ်မှုဆိုင်ရာ">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="မျှဝေရန်" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="ဖိတ်ခေါ်ရန်" />
+        </menu>
+    </item>
+
+</menu>

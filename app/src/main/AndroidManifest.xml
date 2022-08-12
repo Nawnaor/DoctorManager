@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="project.kyawmyoag.doctormanager">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".DailyIncome.EditTrip"
+            android:parentActivityName=".DailyIncome.DailyMain"
+            android:exported="false"/>
+        <activity
+            android:name=".DailyIncome.NewTrip"
+            android:parentActivityName=".DailyIncome.DailyMain"
+            android:exported="false" />
+        <activity
+            android:name=".DailyIncome.DailyMain"
+            android:exported="false" />
+        <activity
+            android:name=".Note.ViewNote"
+            android:exported="false"
+            android:parentActivityName=".Note.NoteActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Note.AddEditNoteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Note.NoteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Does.ViewDoes"
+            android:exported="false" />
+        <activity
+            android:name=".Does.EditTaskDesk"
+            android:exported="false" />
+        <activity
+            android:name=".Does.NewTaskAct"
+            android:exported="false" />
+        <activity
+            android:name=".Does.Home"
+            android:exported="false" />
+        <activity
+            android:name=".ToDo.ToDo"
+            android:exported="false" />
+        <activity
+            android:name=".Table"
+            android:exported="false" />
+        <activity
+            android:name=".splash"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Registration.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".Registration.SignUpSalesManager" />
+        <activity android:name=".Registration.SignUpSalesperson" />
+        <activity
+            android:name=".ManagerMain"
+            android:label="မန်နေဂျာ"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AccountManager"
+            android:label="ကျွန်ုပ်အကောင့်" />
+        <activity
+            android:name=".SalespersonMain"
+            android:label="ရောင်းသူ"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ProductSpecificDetails" />
+        <activity
+            android:name=".Chat.PersonalChatActivityManager"
+            android:label="ကိုယ်ရေးကိုယ်တာ စကားပြောခန်း"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Chat.PersonalChatActivitySalesperson"
+            android:label="ကိုယ်ရေးကိုယ်တာ စကားပြောခန်း" />
+        <activity
+            android:name=".Chat.ChatRoom"
+            android:label="စကားပြောခန်း"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".MyTeam.MyTeam"
+            android:label="ကျွန်ုပ်အဖွဲ့" />
+        <activity
+            android:name=".Leaderboard.LeaderBoardSalesperson"
+            android:label="ဦးဆောင်သူပြဇယား - Top Ten" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".Graph.GraphSalespersonActivity" />
+        <activity android:name=".Graph.GraphManagerActivity" />
+    </application>
+
+</manifest>

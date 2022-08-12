@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menuDelete"
+        android:title="ယူသွားပါပြီ"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/menuUpdate"
+        android:title="မွန်းမံရန်"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menuComplete"
+        android:title="ပြုပြင်ပြီး"
+        app:showAsAction="ifRoom" />
+
+</menu>

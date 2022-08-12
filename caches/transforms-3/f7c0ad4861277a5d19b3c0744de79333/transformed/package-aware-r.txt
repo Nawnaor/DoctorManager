@@ -1,0 +1,3 @@
+io.github.inflationx.viewpump
+id viewpump_layout_res
+id viewpump_tag_id

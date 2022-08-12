@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="7"
+    android:background="#29282B"
+    tools:context=".Does.ViewDoes">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:background="@drawable/header_primary_bg"
+        android:padding="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/customer"
+            android:paddingTop="12dp"
+            android:padding="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Custom အချက်အလက်များ"
+            android:fontFamily="@font/umoe"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:gravity="fill"
+            android:paddingTop="12dp"
+            android:padding="8dp"/>
+
+        <TextView
+            android:id="@+id/cus_date"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Date"
+            android:textSize="14sp"
+            android:padding="8dp"
+            android:textColor="@color/colorLightPink"
+            android:gravity="center"
+            android:background="@drawable/btn_border"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/paper">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="3dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/customer"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/cus_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        tools:text="Name"
+                        android:fontFamily="@font/pyidaungsubold"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="33sp"/>
+                    <View android:layout_height="1.5dp"
+                        android:layout_width="match_parent"
+                        android:background="#00B8D4"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="20dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="3dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/phonebook_new"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/cus_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        tools:text="Phone"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20sp"/>
+                    <View android:layout_height="1.5dp"
+                        android:layout_width="match_parent"
+                        android:background="#00B8D4"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="20dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="အကြောင်းအရာ -"
+                    android:fontFamily="@font/umoe"
+                    android:textSize="16sp"
+                    android:layout_gravity="bottom"
+                    android:textColor="@color/colorAlert"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/cus_about"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        tools:text="About"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="18sp"/>
+                    <View android:layout_height="1.5dp"
+                        android:layout_width="match_parent"
+                        android:background="#00B8D4"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="20dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="ပြင်ရန် -"
+                    android:fontFamily="@font/umoe"
+                    android:textSize="18sp"
+                    android:layout_gravity="bottom"
+                    android:textColor="@color/colorAlert"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/cus_service"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        tools:text="Service"
+                        android:textColor="@color/colorAlert"
+                        android:textSize="18sp"/>
+                    <View android:layout_height="1.5dp"
+                        android:layout_width="match_parent"
+                        android:background="#00B8D4"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="20dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="လက်ခံသည့်အချိန် -"
+                    android:fontFamily="@font/umoe"
+                    android:textSize="20sp"
+                    android:layout_gravity="bottom"
+                    android:textColor="@color/colorAlert"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/cus_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        tools:text="00:00"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="18sp"/>
+                    <View android:layout_height="1.5dp"
+                        android:layout_width="match_parent"
+                        android:background="#00B8D4"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="20dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="ကျသင့်ငွေ -"
+                    android:fontFamily="@font/umoe"
+                    android:textSize="20sp"
+                    android:layout_gravity="bottom"
+                    android:textColor="@color/colorAlert"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/cus_fee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        tools:text="Fee"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ကျပ်"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorPrimaryDark"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="6dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="bottom">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Password -"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/pyidaungsubold"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/cus_pass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:hint="မပါ"
+                    android:textSize="20sp"
+                    android:padding="8dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:fontFamily="@font/umoe"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="6dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="bottom">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IMEI နံပါတ် -"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/pyidaungsubold"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/cus_imei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:hint="မသိ"
+                    android:textSize="20sp"
+                    android:padding="8dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:fontFamily="@font/umoe"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

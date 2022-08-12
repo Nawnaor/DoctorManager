@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="30dp"
+        android:paddingBottom="50dp"
+        android:orientation="vertical"
+        android:background="#29282B">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ic_add_black_24dp"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/pyidaungsubold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="အလုပ်ထည့်သွင်းရန်"
+            android:textColor="@color/colorPrimary"
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/pyidaungsu"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="Customer ၏အချက်အလက်များ အသေးစိတ်ထည့်ပါ!"
+            android:textAlignment="center"
+            android:textColor="@color/colorAlert"
+            android:alpha="0.8"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:fontFamily="@font/pyidaungsu"
+            android:layout_marginTop="30dp"
+            android:text="အမည်"
+            android:textColor="@color/colorLightPink" />
+
+        <EditText
+            android:id="@+id/addTaskTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/pyidaungsu"
+            android:textSize="14sp"
+            android:textColor="@color/colorLightPink"
+            android:layout_marginTop="5dp"
+            android:singleLine="true"
+            android:padding="10dp"
+            android:background="@drawable/btn_border"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:fontFamily="@font/pyidaungsu"
+            android:layout_marginTop="30dp"
+            android:text="ဖုန်းနံပါတ်"
+            android:textColor="@color/colorLightPink" />
+
+        <EditText
+            android:id="@+id/addPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/pyidaungsu"
+            android:textSize="14sp"
+            android:textColor="@color/colorLightPink"
+            android:layout_marginTop="5dp"
+            android:singleLine="true"
+            android:inputType="number"
+            android:padding="10dp"
+            android:background="@drawable/btn_border"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:fontFamily="@font/pyidaungsu"
+            android:layout_marginTop="30dp"
+            android:text="ဖုန်းအမျိုးအစားနှင့် ပျက်သည့်အကြောင်းအရာ"
+            android:textColor="@color/colorLightPink"/>
+
+        <EditText
+            android:id="@+id/addTaskDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/colorLightPink"
+            android:layout_marginTop="5dp"
+            android:singleLine="true"
+            android:background="@drawable/btn_border"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:fontFamily="@font/pyidaungsu"
+            android:layout_marginTop="30dp"
+            android:text="လက်ခံသည့်နေ့စွဲ"
+            android:textColor="@color/colorLightPink"/>
+
+        <EditText
+            android:id="@+id/taskDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/colorLightPink"
+            android:fontFamily="@font/pyidaungsu"
+            android:layout_marginTop="5dp"
+            android:singleLine="true"
+            android:background="@drawable/btn_border"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:fontFamily="@font/pyidaungsu"
+            android:layout_marginTop="30dp"
+            android:text="အချိန်"
+            android:textColor="@color/colorLightPink"/>
+
+        <EditText
+            android:id="@+id/taskTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/colorLightPink"
+            android:fontFamily="@font/pyidaungsu"
+            android:layout_marginTop="5dp"
+            android:singleLine="true"
+            android:background="@drawable/btn_border"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:fontFamily="@font/pyidaungsu"
+            android:layout_marginTop="30dp"
+            android:text="ပြင်မည့်အကြောင်းအရာ"
+            android:textColor="@color/colorLightPink"/>
+
+        <EditText
+            android:id="@+id/taskEvent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/colorLightPink"
+            android:fontFamily="@font/pyidaungsu"
+            android:layout_marginTop="5dp"
+            android:singleLine="true"
+            android:background="@drawable/btn_border"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:fontFamily="@font/pyidaungsu"
+            android:layout_marginTop="30dp"
+            android:text="ကျသင့်ငွေ"
+            android:textColor="@color/colorLightPink"/>
+
+        <EditText
+            android:id="@+id/charges"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/colorLightPink"
+            android:fontFamily="@font/pyidaungsu"
+            android:layout_marginTop="5dp"
+            android:singleLine="true"
+            android:inputType="number"
+            android:background="@drawable/btn_border"
+            android:padding="10dp"/>
+
+        <Button
+            android:id="@+id/addTask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ထည့်သွင်းမည်"
+            android:textColor="@color/colorLightPink"
+            android:background="@drawable/btn_background"
+            android:layout_marginTop="40dp"/>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

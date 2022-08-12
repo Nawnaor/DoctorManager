@@ -1,0 +1,2 @@
+com.baoyz.swipemenulistview
+string app_name

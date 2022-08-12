@@ -1,0 +1,4 @@
+io.github.inflationx.calligraphy3
+attr fontPath
+id calligraphy_tag_id
+id viewpump_tag_id

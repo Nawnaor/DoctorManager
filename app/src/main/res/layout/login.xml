@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:paddingLeft="45dp"
+    android:paddingRight="45dp"
+    android:paddingTop="25dp"
+    android:id="@+id/scroll"
+    android:background="@drawable/login_gradient">
+
+
+    <TextView
+        android:id="@+id/login_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/emailLayout"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="@font/pyidaungsubold"
+        android:gravity="center"
+        android:text="အကောင့်ဝင်ရန်"
+        android:textColor=" #f39c12 "
+        android:textSize="40sp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/emailLayout"
+            android:textColorHint="@color/colorPrimary"
+            android:layout_above="@id/passLayout"
+            app:errorEnabled="true"
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="အီး‌မေးလ်"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:id="@+id/emailid"
+                android:inputType="textEmailAddress"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_height="wrap_content"
+            android:id="@+id/passLayout"
+            android:layout_width="match_parent"
+            app:passwordToggleEnabled="true"
+            android:layout_above="@id/radioGroup_type_person"
+            android:textColorHint="@color/colorPrimary"
+            app:passwordToggleTint="@color/colorPrimary">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="စကားဝှက်"
+                android:id="@+id/password"
+                android:inputType="textPassword"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroup_type_person"
+            android:orientation="horizontal"
+            android:layout_above="@id/login_press">
+            <RadioButton
+                android:id="@+id/salesperson_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ရောင်းသူ"
+                android:layout_weight="1"
+                android:textSize="20sp"/>
+            <RadioButton
+                android:id="@+id/manager_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="မန်နေဂျာ"
+                android:layout_weight="1"
+                android:textSize="20sp"/>
+        </RadioGroup>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/login_press"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/linear1"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:background="#ff9e00"
+        android:text="Login"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="26sp" />
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/spinkit"
+        style="@style/SpinKitView.Wave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:layout_below="@id/radioGroup_type_person"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:elevation="10dp"
+        android:paddingLeft="10dp"
+        android:visibility="gone"
+        app:SpinKit_Color="@color/colorLightPink"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="bottom"
+            android:id="@+id/linear1"
+            android:gravity="bottom"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_reset_password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@null"
+                android:text="စကားဝှက်မေ့နေလျှင် ?"
+                android:textAllCaps="false"
+                android:textColor="@color/colorAlert" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="အဖွဲ့ဝင်မဖြစ်သေးလျှင် ? "
+                android:textColor="#fff"
+                android:textSize="18sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="မန်နေဂျာစာရင်းသွင်းရန်"
+                android:layout_marginTop="15sp"
+                android:textColor="#ff9e00"
+                android:linksClickable="true"
+                android:id="@+id/Manager"
+                android:textSize="20sp"
+                android:gravity="center_horizontal"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ရောင်းသူစာရင်းသွင်းရန်"
+                android:textSize="20sp"
+                android:layout_marginTop="5sp"
+                android:id="@+id/salesperson"
+                android:textColor="#ff9e00"
+                android:linksClickable="true"
+                android:gravity="center_horizontal"
+                />
+
+        </LinearLayout>
+
+</RelativeLayout>

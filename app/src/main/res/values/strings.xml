@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Dr.Manager</string>
+    <string name="title_activity_main_manager">မန်နေဂျာ</string>
+    <string name="title_home">မူလစာမျက်နှာ</string>
+    <string name="title_dashboard">ဇယား</string>
+    <string name="title_notifications">အသိပေးချက်များ</string>
+    <string name="title_activity_manager_main">မန်နေဂျာ</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">ဆက်တင်များ</string>
+    <string name="title_activity_salesperson_main">အရောင်းကိုယ်စလှယ်</string>
+    <string name="minimum_password">စကားဝှက်တိုလွန်းပါသည်, အနည်းဆုံး ၆ လုံးရိုက်ထည့်ပါ!</string>
+    <string name="auth_failed">မအောင်မြင်ပါ, အီးမေးလ်နှင့် စကားဝှက်ကိုစစ်ဆေးပါ (သို့) စာရင်းသွင်းပါ</string>
+
+    <string name="delete_confirmation">အတည်ပြုချက်</string>
+    <string name="sureToDelete">ထိုအလုပ်အားဖျက်ရန်သေချာပါသလား?</string>
+    <string name="yes">သေချာသည်</string>
+    <string name="no">မသေချာပါ</string>
+    <string name="confirmation">ပြုပြင်ပြီးကြောင်းအတည်ပြုရန်!..</string>
+    <string name="sureToMarkAsComplete">ပြုပြင်ပြီးကြောင်း သေချာပါသလား?</string>
+    <string name="congrats_you_have_completed_the_task_successfully">ဂုဏ်ယူပါတယ်!... ပြုပြင်ပြီးကြောင်းအတည်ပြုပြီး..</string>
+    <string name="search">ရှာရန်</string>
+
+    <string-array name="choice_items">
+        <item>ပြုပြင်နေဆဲ</item>
+        <item>ပြုပြင်ပြီး</item>
+        <item>ပြင်၍မရပါ</item>
+    </string-array>
+
+    <string-array name="choice_spinner">
+        <item>သာမန်</item>
+        <item>အရေးကြီး</item>
+    </string-array>
+
+    <string name="veg">Veggies/Fruits</string>
+    <string name="meat">Meat/Fish</string>
+    <string name="other_food">Essential Groceries</string>
+    <string name="personal">Personal Supplies</string>
+    <string name="kitchen">Kitchen Supplies</string>
+    <string name="toilet">Toiletries</string>
+    <string name="nonessential">Non-Essentials</string>
+    <string name="gas">Gas</string>
+    <string name="rent">Rent</string>
+    <string name="auto">Auto Insurance</string>
+    <string name="mobile">Mobile</string>
+    <string name="internet">Internet</string>
+
+</resources>

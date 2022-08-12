@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MeterNumberPicker"><attr format="integer" name="mnp_min"/><attr format="integer" name="mnp_max"/><attr format="integer" name="mnp_value"/><attr format="color" name="mnp_textColor"/><attr format="dimension" name="mnp_textSize"/><attr format="string" name="mnp_typeface"/><attr format="dimension" name="mnp_minWidth"/><attr format="dimension" name="mnp_minHeight"/><attr format="dimension" name="mnp_paddingHorizontal"/><attr format="dimension" name="mnp_paddingVertical"/></declare-styleable>
+    <declare-styleable name="MeterView"><attr format="integer" name="mv_numberOfFirst"/><attr format="integer" name="mv_numberOfSecond"/><attr format="color" name="mv_firstColor"/><attr format="color" name="mv_secondColor"/><attr format="reference" name="mv_pickerStyle"/><attr format="boolean" name="mv_enabled"/></declare-styleable>
+    <string name="app_name">MeterNumberPicker</string>
+</resources>

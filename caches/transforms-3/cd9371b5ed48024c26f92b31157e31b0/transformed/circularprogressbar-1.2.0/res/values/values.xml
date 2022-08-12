@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleProgressbar"><attr format="float" name="cpb_progress"/><attr format="integer" name="cpb_backgroundProgressWidth"/><attr format="integer" name="cpb_foregroundProgressWidth"/><attr format="color" name="cpb_backgroundProgressColor"/><attr format="color" name="cpb_foregroundProgressColor"/><attr format="boolean" name="cpb_roundedCorner"/><attr format="boolean" name="cpb_touchEnabled"/><attr format="boolean" name="cpb_clockwise"/></declare-styleable>
+    <string name="app_name">CircularProgressbar</string>
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/login_gradient"
+    tools:context=".splash"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/drmobile" />
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/spinkit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/SpinKitView.Wave"
+        app:SpinKit_Color="@color/colorLightPink"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_below="@+id/imgLogo">
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_marginTop="80dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|bottom"
+            android:paddingBottom="40dp"
+            android:text="Welcome to DoctorManager"
+            android:textSize="28dp"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/acme"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/creteround"
+            android:gravity="center|bottom"
+            android:paddingBottom="18sp"
+            android:text="Developed By : KyawMyoAung"
+            android:textColor="@color/colorLightPink"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

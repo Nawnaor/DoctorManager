@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:padding="5dp"
+    android:background="@drawable/login_gradient">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ရောက်လာတော့မည့် အမြတ်ငွေ"
+        android:fontFamily="@font/pyidaungsu"
+        android:textSize="25sp"
+        android:textColor="#fff"
+        android:layout_gravity="center"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp">
+
+    <com.jackandphantom.circularprogressbar.CircleProgressbar
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:cpb_progress="0"
+        android:id="@+id/circular_progress"
+        android:layout_gravity="center"
+        app:cpb_roundedCorner="true"
+        app:cpb_foregroundProgressWidth="15"
+        app:cpb_foregroundProgressColor="#1864c2"
+        app:cpb_touchEnabled="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="40000"
+            android:textColor="#fff"
+            android:id="@+id/target"
+            android:layout_gravity="center"
+            android:textSize="18sp"/>
+    </FrameLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="အကြံပြုချက်လေးတွေ ဖတ်ကြည့်ကြ"
+        android:fontFamily="@font/pyidaungsu"
+        android:layout_marginTop="5sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginBottom="5sp"
+        android:textSize="22sp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:layout_gravity="center"
+                android:text="၁။ စျေးကွက်တွင် ဝယ်လိုအားများလာနေသော ထုတ်ကုန်များအပေါ် ပိုမိုအာရုံစိုက်ပါ။"
+                android:fontFamily="@font/pyidaungsu"
+                android:layout_marginBottom="3sp"
+                android:textSize="16sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:layout_gravity="center"
+                android:text="၂။ ဖောက်သည်များအားလုံးကို ထုတ်ကုန်တစ်ခုရောင်းချရန် ဆန်းသစ်သောနည်းလမ်းများနဲ့ကြိုးစားကြည့်ပါ။"
+                android:fontFamily="@font/pyidaungsu"
+                android:layout_marginBottom="3sp"
+                android:textSize="16sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:layout_gravity="center"
+                android:text="၃။ အပြုသဘောဆောင်ပါ။"
+                android:fontFamily="@font/pyidaungsu"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
